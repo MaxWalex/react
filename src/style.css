@@ -91,3 +91,10 @@ ul {
     top: 15px;
     cursor: pointer;
 }
+
+.feedback_stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
