@@ -125,9 +125,11 @@ ul {
     height: 40px;
     cursor: pointer;
 }
-
 .btn_primary {
     background-color: #202142;
+}
+.btn:disabled {
+    background-color: grey;
 }
 .btn_secondary {
     background-color: #ff6a95;
@@ -135,4 +137,11 @@ ul {
 .btn:hover {
     transform: scale(0.98);
     opacity: 0.9;
+}
+
+.message {
+    position: absolute;
+    bottom: 14px;
+    color: #f16969;
+    font-size: 13px;
 }
