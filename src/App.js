@@ -1,11 +1,23 @@
+import {useState} from 'react'
 import Header  from "./components/Header"
+import FeedbackList from './components/FeedbackList'
+import FeedbackData from './data/feedbackData'
 
 function App() {
+
+    const [feedback, setFeedback] = useState(FeedbackData)
+
+    const deleteFeedback = (id) => {
+        if (window.confirm('Are u sure u want to delete?')) {
+            setFeedback(feedback.filter((item) => item.id !== id ))
+        }
+    }
+
     return (
         <>
-            <Header text='My App' bgColor="red" textColor="blue"/>
+            <Header text='Feedback UI' colorText="#f16969" />
             <div className="container">
-                <h2>Feedback UI</h2>
+                <FeedbackList feedback={feedback} handleDelete={id => deleteFeedback(id)} />
             </div>      
         </>
     )
