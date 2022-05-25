@@ -73,7 +73,23 @@ ul {
     padding: 10px;
     transition: 0.3s;
 }
-
+.rating li {
+    cursor: pointer;
+}
+.rating li input {
+    display: none;
+}
+.rating li label {
+    transition: 0.3s;
+    color: #202142;
+    cursor: inherit;
+}
+.rating li input:checked ~ label {
+    color: #f16969;
+}
+.rating li:hover label{
+    color: #f16969;
+}
 .num-display {
     position: absolute;
     top: 0;
