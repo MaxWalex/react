@@ -98,3 +98,21 @@ ul {
     justify-content: space-between;
     margin-bottom: 45px;
 }
+.input_group {
+    margin: 20px auto 0 auto;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input_group input {
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
