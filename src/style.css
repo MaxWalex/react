@@ -30,6 +30,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    background-color: #171832;
 }
 
 .card {
@@ -40,6 +41,12 @@ ul {
     margin: 20px 0;
     position: relative;
 }
+
+.card.reverse {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
 .card h2 {
     font-size: 22px;
     font-weight: 600;
@@ -65,4 +72,22 @@ ul {
     border: 1px solid #eee;
     padding: 10px;
     transition: 0.3s;
+}
+
+.num-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -30%);
+    background-color: #f16969;
+    color: #fff;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
 }
