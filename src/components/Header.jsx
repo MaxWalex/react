@@ -1,22 +1,24 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-function Header({ text, bgColor, textColor }) {
-    const headerStyles = {
-        backgroundColor: bgColor, 
-        color: textColor
+function Header({ text, colorText }) {
+
+    const headerH2Styles = {
+        color: colorText, 
+        textAlign: 'center', 
+        padding: '10px 0'
     }
 
   return (
-    <header style={headerStyles}>
+    <header className="header">
         <div className="container">
-            <h2>{text}</h2>
+            <h2 style={headerH2Styles}>{text}</h2>
         </div>
     </header>
   )
 }
 
-Header.defaultProps = {
-    bgColor: 'rgba(0,0,0,0.4)',
-}
+// Header.defaultProps = {
+//     bgColor: 'rgba(0,0,0,0.4)',
+// }
 
 export default Header
