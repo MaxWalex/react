@@ -130,6 +130,7 @@ ul {
     font-family: inherit;
     outline: none;
     border: none;
+    width: 70%;
 }
 
 .btn {
