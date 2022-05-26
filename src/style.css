@@ -162,3 +162,9 @@ ul {
     color: #f16969;
     font-size: 13px;
 }
+
+.about_link {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
