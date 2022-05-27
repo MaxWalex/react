@@ -99,13 +99,17 @@ ul {
     color: #fff;
 }
 
-.close {
+.close,
+.edit {
     background-color: transparent;
     border: none;
     position: absolute;
     right: 15px;
     top: 15px;
     cursor: pointer;
+}
+.edit {
+    right: 35px;
 }
 
 .feedback_stats {
